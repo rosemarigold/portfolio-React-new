@@ -5,7 +5,7 @@ export default function Menu() {
     return <>
         <div className={styles.menu}>
             <div className={styles.name}>
-                Lamia Ouassaaa
+                Lamia Ouassaa
             </div>
             <div className={styles.options}>
                 <h1><Link to="/">Home</Link></h1>
