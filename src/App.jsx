@@ -20,7 +20,7 @@ const Contact = lazy(() => import('./pages/Contact'));
 
 export default function App() {
   return  <Suspense fallback={<>...</>}> <Routes>
-      <Route /*basename="/portfolio-React"*/ path="/portfolio-React" element={<Layout />}/>
+      <Route basename="/portfolio-React" path="/portfolio-React" element={<Layout />}/>
         <Route index element={<Home />}/>
         <Route path="ProjectsMainPage" element={<ProjectsMainPage />}/>
         <Route path="Project1" element={<Project1 />}/>
