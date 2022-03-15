@@ -1,0 +1,74 @@
+.projectsMenuContainer{
+    /*border: 2px solid red;*/
+    display: flex;
+    justify-content: center;
+}
+.projectsMenuOptions{
+    width: 80%;
+    width: 45rem;
+    width: 50rem;
+    /*border: 2px solid purple;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container {
+    margin: 1rem;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(26, 26, 32);  
+    /*background-color: rgb(50, 50, 53);  */
+    display: flex;
+    flex-direction: row;
+}
+.container:hover{
+    opacity: 50%;
+    transition: 0.5s;
+}
+.container h1{
+    color: white;
+    font-size: large;
+    text-decoration: underline;
+}
+.leftContent{
+    padding: 0.5rem;
+    width: 100%;
+    float: left;
+}
+.leftContent p{
+    color: rgb(221, 221, 221);
+}
+.rightImage img{
+    width: 100%;
+    height: 100%;
+    
+    /*border: 2px solid blue;*/
+}
+/*mobile/responsive*/
+@media only screen and (max-width: 820px) {
+    .projectsMenuOptions{
+        width: 85%;
+        /*border: 2px solid purple;*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /*align-items: center;*/
+    }
+    .container{
+        width: 95%;
+        height: fit-content;
+        /*max-height: 20rem;*/
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .leftContent{
+        padding: 0.5rem;
+        width: 100%;
+        float: left;
+    }
+    .rightImage{
+        height: 15rem;   
+        /*width: 20rem;*/
+    }
+}

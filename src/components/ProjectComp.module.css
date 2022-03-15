@@ -1,0 +1,79 @@
+.container{
+    display: flex;  
+    justify-content: center;
+}
+.paragraph{
+    /*border: 2px solid blue;*/
+    width: 45rem;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: large;
+    line-height: normal;
+}
+.paragraph a:link{
+    text-decoration: none;
+    color: rgb(68, 132, 250);
+    font-weight: bold;
+}
+.paragraph a:hover{
+    text-decoration: underline;
+    color: rgb(23, 93, 223);
+}
+.paragraph h1{
+    font-size: xx-large;
+    text-decoration: underline;
+}
+.paragraph div{
+    border: 2px dotted white;
+    padding: 1rem;
+}
+.body{ 
+    display: flex;  
+    justify-content: center;
+}
+.imageContainer{
+    /*border: 2px solid blue;*/
+    width: 45rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.body img{
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    /* Source: https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+    .projectdiv{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .paragraph, .imageContainer{
+        width: 90%;
+        padding: 0;
+        
+    }
+    .paragraph{
+        padding-bottom: 1rem;       
+    }
+    .paragraph h1{
+        font-size: large;
+        padding-top: 2rem;
+    }
+    .paragraph div{
+        font-size: medium;
+    }
+    .body{
+        font-size: medium;
+    }
+}
