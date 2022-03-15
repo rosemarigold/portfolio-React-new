@@ -7,7 +7,7 @@ import { HelmetProvider } from 'react-helmet-async';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <HelmetProvider>
         <App />
       </HelmetProvider>

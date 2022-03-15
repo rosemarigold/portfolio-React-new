@@ -20,13 +20,13 @@ const Contact = lazy(() => import('./pages/Contact'));
 
 export default function App() {
   return  <Suspense fallback={<>...</>}> <Routes>
-      <Route path="https://rosemarigold.github.io/portfolio-React/" element={<Layout />}/>
+      <Route exact path="/" element={<Layout />}/>
         <Route index element={<Home />}/>
-        <Route path="ProjectsMainPage" element={<ProjectsMainPage />}/>
-        <Route path="Project1" element={<Project1 />}/>
-        <Route path="Project2" element={<Project2 />}/>
-        <Route path="Project3" element={<Project3 />}/>
-        <Route path="Contact" element={<Contact />}/>
+        <Route exact path="ProjectsMainPage" element={<ProjectsMainPage />}/>
+        <Route exact path="Project1" element={<Project1 />}/>
+        <Route exact path="Project2" element={<Project2 />}/>
+        <Route exact path="Project3" element={<Project3 />}/>
+        <Route exact path="Contact" element={<Contact />}/>
       </Routes>
     </Suspense>
 }
