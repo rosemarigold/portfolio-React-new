@@ -17,8 +17,15 @@
     margin-left: 6rem;
     border-right: 2px dotted white;
 }
-.aboutmeContainerHeader{
-    line-height: normal;
+.aboutmeContainerHeader, .skillsContainerHeader{
+    color: rgb(68, 132, 250);
+    font-weight: bold;
+    font-size: xx-large;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.skillsContainerHeader{
+    padding-left: 2.5rem;
 }
 .skillsContainer{
     margin-left: 2rem;
@@ -29,7 +36,6 @@
 }
 .aboutmeContainer, .skillsContainer{
     margin-top: 2rem;
-   /* border: 2px solid red;*/
 }
 .welcome h1{
     font-size: 3rem;
@@ -54,27 +60,13 @@
 span,p, ul{
     color: rgb(216, 216, 241);   
 }
-h2{
-    color: rgb(68, 132, 250);
-    font-size: 0.5rem;
-    font-weight: bold;
-}
 .skillsContainer ul{
     display: flex;
     justify-content: row;
     flex-wrap: wrap;
     list-style: none;
 }
-.skillsContainer li{
-    width: fit-content;
-    /*border: white solid 2px;*/
-    width: 9rem;
-    height: 8rem;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: rgb(26, 26, 32);
-}
-.skillscontainer{
+.skillsbody{
     display: flex;
     justify-content: row;
     flex-wrap: wrap;
@@ -87,6 +79,7 @@ h2{
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: rgb(26, 26, 32);
+    background-color: rgb(51, 51, 61);
 }
 .skillstitle{
     font-size: x-large;

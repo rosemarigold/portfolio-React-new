@@ -21,9 +21,6 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
-.options a{
-    color: white;
-}
 .options a:visited{
     text-decoration: underline;
     color: white;
@@ -48,9 +45,9 @@
         justify-content: center;
     }
     .name{
-        /*background-color: rgb(23, 93, 223);*/
-        color: rgb(23, 93, 223);
+        color: white;
         font-weight: bold;
+        font-weight:normal;
         width: 100%;
         font-size: 2.5rem;
         text-align: center;

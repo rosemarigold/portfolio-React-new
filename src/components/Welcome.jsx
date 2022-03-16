@@ -4,8 +4,8 @@ export default function Welcome(props) {
     return <>
         <div className={styles.welcome}>
             <div className={styles.aboutmeContainer}>
-                <div className={styles.aboutmeContainerHeader}>          
-                    <h2>Programming student</h2>
+                <div className={styles.aboutmeContainerHeader}>                
+                    Programming student
                 </div>
                 <p>
                     <img src={require('../resources/totoro.gif')} alt="profile" className={styles.profilepicture} />    
@@ -21,9 +21,10 @@ export default function Welcome(props) {
                 </p>
             </div>       
             <div className={styles.skillsContainer}>
-            
-                <h2>Skills</h2>
-                <div className={styles.skillscontainer}>
+                <div className={styles.skillsContainerHeader}>
+                    Skills
+                </div>
+                <div className={styles.skillsbody}>
                     <div className={styles.skills}>
                         <div className={styles.skillstitle}>C#/C++</div>
                         <img src={require('../resources/skills/csharp_cplusplus.jpg')} alt="c#c++" className={styles.rectangle}/> 
