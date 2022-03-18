@@ -1,6 +1,7 @@
 import Menu from '../../components/Menu.jsx';
 import ProjectComp from '../../components/ProjectComp.jsx';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 export default function Project1() {
     return <main>
@@ -11,6 +12,11 @@ export default function Project1() {
         <div className="menucontainer">
             <Menu />
         </div>  
+        <div className="backlinkcontainer">
+            <div className="backlink">
+                <Link to="/ProjectsMainPage"> &#8592; Back</Link>
+            </div>
+        </div>        
         <ProjectComp title="Inventory Management Desktop Application" 
                     paragraph="Desktop application developed in .NET WinForms Framework that can manage a small business inventory. 
                     Users can add, modify, delete, and view items and providers.">
@@ -29,5 +35,10 @@ export default function Project1() {
                     <img src={require('../../resources/project1/shopping_cart.png')} alt="project1-photo7" width="auto" height="auto"/>                   
                 </div>
         </ProjectComp>
+        <div className="backlinkcontainer">
+            <div className="toplink">
+                <a href="#top">&#8593; Back to top of page</a>
+            </div>
+        </div>  
     </main>
 }

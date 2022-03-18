@@ -23,6 +23,7 @@
 .contactform{
     width: 45rem;
     height: fit-content;
+    border: solid 2px red;
 }
 .nom, .courriel, .sujet, .message{
     width: 100%;
