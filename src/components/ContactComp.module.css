@@ -1,3 +1,4 @@
+
 .contactcontainer{ 
     display: flex;  
     justify-content: center;
@@ -23,7 +24,6 @@
 .contactform{
     width: 45rem;
     height: fit-content;
-    border: solid 2px red;
 }
 .nom, .courriel, .sujet, .message{
     width: 100%;
@@ -70,4 +70,15 @@ input[type=text] {
 input[type=email] {
     resize: vertical;
     font-family: "Roboto Mono", monospace;
+}
+
+.erreur {
+    display: none;
+    background-color: #ffabab;
+    border: 3px solid #A00;
+    margin-bottom: .5rem;
+    visibility: hidden;
+}
+.erreur.active {
+    display: block;
 }

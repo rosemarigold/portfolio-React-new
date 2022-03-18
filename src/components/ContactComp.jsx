@@ -2,6 +2,7 @@ import styles from './ContactComp.module.css';
 
 export default function ContactComp() {
 
+    // to print in to console the contact info
     const printForm = () => {
         // capture htmml elements
         let name = document.getElementById('name');
@@ -16,6 +17,35 @@ export default function ContactComp() {
                         "\nSubject: " + subject.value +
                         "\nDescription: " + description.value  );
     }
+    // verify name
+    const validerNom = () => {
+        // variables
+        const form = document.getElementById('contactForm');
+        const nom = document.getElementById('name');
+        const nomErreur = document.getElementById('nom-erreur');
+
+        // objet validity, vérifie si l'input est valide
+        // Enlève la classe active (style.css)
+        if(nom.validity.valid){ 
+            nomErreur.classList.remove('active'); 
+            printForm();
+        }
+        // si l'input n'est pas valide, ajoute la classe active (style.css)
+        else{  
+            nomErreur.classList.add('active'); 
+            // si le champ est vide
+            // valueMissing, tooShort, tooLong = propriété de validation
+            if(nom.validity.valueMissing){
+                nomErreur.innerText = 'Veuillez entrer votre nom complet.';
+            }
+            else if(nom.validity.tooShort){
+                nomErreur.innerText = 'Votre nom est trop court.';
+            }
+            else if(nom.validity.tooLong){
+                nomErreur.innerText = 'Votre nom est trop long.';
+            }
+        }
+    }
     
     return <>
         <div className={styles.ContactComp}> 
@@ -24,11 +54,12 @@ export default function ContactComp() {
                     <a href="mailto:lamia_ouassaa@outlook.com">lamia_ouassaa@outlook.com</a>
             </p>           
             <div className={styles.contactcontainer}>      
-                <form className={styles.contactform} id="contactForm" >
+                <form className={styles.contactform} id="contactForm" noValidate>
                         <div className={styles.contactformheader}>
                             <label>
-                                <input type="text" id="name" className={styles.nom} required minLength="1" maxLength="30" placeholder="Name"/>
+                                <input type="text" id="name" className={styles.nom} required minLength="5" maxLength="30" placeholder="Name"/>
                             </label>
+                            <div id="nom-erreur" class="erreur"> </div>
                             <label>
                                 <input type="email" id="email" className={styles.courriel} required placeholder="Email"/>
                             </label>
@@ -39,11 +70,11 @@ export default function ContactComp() {
                         <label>
                             <textarea className={styles.message} id="description" placeholder="Message" required minLength="1" maxLength="300"></textarea>    
                         </label>
-                        <input onClick={printForm} className={styles.contactsubmit} type="button" value="Send now"></input>
+                        <input /*onClick={printForm}*/ onClick={validerNom} className={styles.contactsubmit} type="button" value="Send now"></input>
                     
-                </form>    
+                </form>
             </div>               
         </div>  
-
     </>
 }
+<script type="module" src='../validation.js'></script>
