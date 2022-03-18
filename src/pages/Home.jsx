@@ -14,6 +14,7 @@ export default function Home() {
         </div>   
         <div className="welcome">
             <Welcome />
+            <div id="nomerreur" class="erreur">sup </div>    
         </div>      
     </main>
 }
