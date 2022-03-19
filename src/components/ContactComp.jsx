@@ -3,14 +3,18 @@ import { useRef, useState } from 'react';
 
 export default function ContactComp() {
 
-    //
+    // get HTML element
     const nameInput = useRef(null);
+    const emailInput = useRef(null);
+    const subjectInput = useRef(null);
+    const descriptionInput = useRef(null);
 
-    // # verify name
+    // #1 verify name
     const [messageErreurName, setMessageErreurName] = useState('');
     const validateName = () => {
         if (nameInput.current.validity.valid) {
             setMessageErreurName('');
+            // if valid, return true
             return true;
         }
         else {
@@ -18,10 +22,61 @@ export default function ContactComp() {
                 setMessageErreurName('Your name is missing.');
             }
             else if (nameInput.current.validity.typeMismatch) {
-                setMessageErreurName('Mismatch type.');
+                setMessageErreurName('Please enter a valid name.');
             }
         }
     }   
+    // #2 verify email 
+    const [messageErreurEmail, setMessageErreurEmail] = useState('');
+    const validateEmail = () => {
+        if (emailInput.current.validity.valid) {
+            setMessageErreurEmail('');
+            // if valid, return true
+            return true;
+        }
+        else {
+            if (emailInput.current.validity.valueMissing) {
+                setMessageErreurEmail('Your email is missing.');
+            }
+            else if (emailInput.current.validity.typeMismatch) {
+                setMessageErreurEmail('Please enter a valid email.');
+            }
+        }
+    }
+    // #3 verify subject
+    const [messageErreurSubject, setMessageErreurSubject] = useState('');
+    const validateSubject = () => {
+        if (subjectInput.current.validity.valid) {
+            setMessageErreurSubject('');
+            // if valid, return true
+            return true;
+        }
+        else {
+            if (subjectInput.current.validity.valueMissing) {
+                setMessageErreurSubject('The subject is missing.');
+            }
+            else if (subjectInput.current.validity.typeMismatch) {
+                setMessageErreurSubject('Please enter a valid subject.');
+            }
+        }
+    }
+    // #4 verify subject
+    const [messageErreurDescription, setMessageErreurDescription] = useState('');
+    const validateDescription = () => {
+        if (descriptionInput.current.validity.valid) {
+            setMessageErreurDescription('');
+            // if valid, return true
+            return true;
+        }
+        else {
+            if (descriptionInput.current.validity.valueMissing) {
+                setMessageErreurDescription('The description is missing.');
+            }
+            else if (descriptionInput.current.validity.typeMismatch) {
+                setMessageErreurDescription('Please enter a valid description.');
+            }
+        }
+    }
 
     // submit
     const submitForm = (event) => {
@@ -29,100 +84,17 @@ export default function ContactComp() {
         event.preventDefault(); 
        
         //
-        if(validateName()){
-            if (nameInput.current/* && 
+        if(validateName() && validateEmail() && validateSubject() && validateDescription()){
+            if (nameInput.current && emailInput.current && subjectInput.current && descriptionInput.current/* && 
             event.currentTarget.checkValidity()*/) {
             // print info
             console.log("Name: " + nameInput.current.value);
+            console.log("Email: " + emailInput.current.value);
+            console.log("Email: " + subjectInput.current.value);
+            console.log("Description: " + descriptionInput.current.value);
             }
         }
-        
-
-        //
-
     }
-     
-    // validate email
-    /*const validateEmail = () => {
-        const courriel = document.getElementById('email');
-        const courrielErreur = document.getElementById('nomerreur');
-
-        // objet validity, vérifie si l'input est valide, enleve la classe active (style.css)
-        if(courriel.validity.valid){ 
-            courrielErreur.classList.remove('active'); 
-            //courrielErreur.classList.add('tohide'); 
-            return true;
-        }
-        // si l'input n'est pas valide, ajoute la classe active (style.css)
-        else{  
-            courrielErreur.classList.add('active'); 
-            // si le champ est vide
-            if(courriel.validity.valueMissing){
-                courrielErreur.innerText = 'Your email is missing, please enter your full email.';
-            }
-            // si un @ est manquant
-            else if(courriel.validity.typeMismatch){
-                courrielErreur.innerText = 'Please enter a valid email format.';
-            }
-        }
-    }*/
-    // verify subject
-    /*const validateSubject = () => {
-        const subject = document.getElementById('subject');
-        const subjectErreur = document.getElementById('nomerreur');
-
-        // objet validity, vérifie si l'input est valide, enlève la classe active (style.css)
-        if(subject.validity.valid){ 
-            subjectErreur.classList.remove('active'); 
-            //nomErreur.classList.add('tohide'); 
-            return true;
-        }
-        // si l'input n'est pas valide, ajoute la classe active (style.css)
-        else{  
-            subjectErreur.classList.add('active');  
-            // si le champ est vide
-            // valueMissing, tooShort, tooLong = propriété de validation
-            if(subject.validity.valueMissing){
-                subjectErreur.innerText = 'The subject is missing, please enter it.';
-            }
-            else if(subject.validity.tooLong){
-                subjectErreur.innerText = 'The subject is too long, please enter a subject between 1 to 30 characters.';
-            }
-        }
-    } */
-    // validate description    
-    /*const validateDescription = () => {
-        const description = document.getElementById('description');
-        const descriptionErreur = document.getElementById('nomerreur');
-        // objet validity, vérifie si l'input est valide, enlève la classe active (style.css)
-        if(description.validity.valid){ 
-            descriptionErreur.classList.remove('active'); 
-            //nomErreur.classList.add('tohide'); 
-            return true;
-        }
-        // si l'input n'est pas valide, ajoute la classe active (style.css)
-        else{  
-            descriptionErreur.classList.add('active');  
-            // si le champ est vide
-            // valueMissing, tooShort, tooLong = propriété de validation
-            if(description.validity.valueMissing){
-                descriptionErreur.innerText = 'The description is missing, please enter it.';
-            }
-            else if(description.validity.tooLong){
-                descriptionErreur.innerText = 'The  description is too long.';
-            }
-        }
-    }    */  
-    // validate all inputs
-    /*const validateInputs = () => {
-        // if all inputs are valid, print info into the console
-        if(validateName() && validateEmail() && validateSubject() && validateDescription()){
-            printForm();
-        }
-        else{
-            console.log("nope");
-        }
-    }*/
 
     return <>
         <div className={styles.ContactComp}> 
@@ -137,18 +109,27 @@ export default function ContactComp() {
                                 <input type="text" className={styles.nom} required minLength="2" maxLength="30" placeholder="Name" ref={nameInput} onChange={validateName} onBlur={validateName} />
                             </label>
                             <label>
-                                <input type="email" className={styles.courriel} required placeholder="Email" /*onChange={validateEmail}*//>
+                                <input type="email" className={styles.courriel} required placeholder="Email" ref={emailInput} onChange={validateEmail} onBlur={validateEmail} />
                             </label>
                         </div>
                         <label>
-                            <input type="text" className={styles.sujet} required minLength="1" maxLength="30" placeholder="Subject" /*onChange={validateSubject}*/ />
+                            <input type="text" className={styles.sujet} required minLength="1" maxLength="30" placeholder="Subject" ref={subjectInput} onChange={validateSubject} onBlur={validateSubject} />
                         </label>
                         <label>
-                            <textarea className={styles.message} placeholder="Message" required minLength="1" maxLength="500" /*onChange={validateDescription}*/ ></textarea>    
+                            <textarea className={styles.message} placeholder="Message" required minLength="1" maxLength="500" ref={descriptionInput} onChange={validateDescription} onBlur={validateDescription} ></textarea>    
                         </label>
                         <input className={styles.contactsubmit} type="submit" value="Send now"></input>
                         {messageErreurName !== '' &&
                             <div className={styles.erreur}>{messageErreurName}</div>
+                        } 
+                        {messageErreurEmail !== '' &&
+                            <div className={styles.erreur}>{messageErreurEmail}</div>
+                        } 
+                        {messageErreurSubject !== '' &&
+                            <div className={styles.erreur}>{messageErreurSubject}</div>
+                        } 
+                        {messageErreurDescription !== '' &&
+                            <div className={styles.erreur}>{messageErreurDescription}</div>
                         } 
                 </form>
             </div>               
