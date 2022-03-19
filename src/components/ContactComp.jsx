@@ -92,6 +92,12 @@ export default function ContactComp() {
             console.log("Email: " + emailInput.current.value);
             console.log("Email: " + subjectInput.current.value);
             console.log("Description: " + descriptionInput.current.value);
+
+            // empty inputs
+            nameInput.current.value = '';
+            emailInput.current.value = '';
+            subjectInput.current.value = '';
+            descriptionInput.current.value = '';
             }
         }
     }
