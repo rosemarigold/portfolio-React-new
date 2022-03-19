@@ -76,6 +76,6 @@ input[type=email] {
     padding: 1rem;
     text-align: center;
     color: red;
-    border: solid 2px red;
+    /*border: solid 2px red;*/
 }
 
