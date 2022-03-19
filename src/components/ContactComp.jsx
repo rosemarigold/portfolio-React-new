@@ -112,7 +112,7 @@ export default function ContactComp() {
                 <form className={styles.contactform} noValidate onSubmit={submitForm}>
                         <div className={styles.contactformheader}>
                             <label>
-                                <input type="text" className={styles.nom} required minLength="2" maxLength="30" placeholder="Name" ref={nameInput} onChange={validateName} onBlur={validateName} />
+                                <input type="text" className={styles.nom} required minLength="1" maxLength="30" placeholder="Name" ref={nameInput} onChange={validateName} onBlur={validateName} />
                             </label>
                             <label>
                                 <input type="email" className={styles.courriel} required placeholder="Email" ref={emailInput} onChange={validateEmail} onBlur={validateEmail} />
