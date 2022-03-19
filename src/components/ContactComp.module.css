@@ -70,3 +70,12 @@ input[type=email] {
     resize: vertical;
     font-family: "Roboto Mono", monospace;
 }
+
+/*contact form*/
+.erreur {
+    padding: 1rem;
+    text-align: center;
+    color: red;
+    border: solid 2px red;
+}
+
