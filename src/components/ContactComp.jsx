@@ -1,56 +1,49 @@
 import styles from './ContactComp.module.css';
+import { useRef, useState } from 'react';
 
 export default function ContactComp() {
 
-    // to print in to console the contact info
-    const printForm = () => {
-        // capture htmml elements
-        let name = document.getElementById('name');
-        let email = document.getElementById('email');
-        let subject = document.getElementById('subject');
-        let description = document.getElementById('description');
+    //
+    const nameInput = useRef(null);
 
-        console.log('Button clicked.');
-        // print form information
-        console.log("Name: " + name.value + 
-                        "\nEmail: " + email.value +
-                        "\nSubject: " + subject.value +
-                        "\nDescription: " + description.value  );
-    }
-    // verify name
+    // # verify name
+    const [messageErreurName, setMessageErreurName] = useState('');
     const validateName = () => {
-
-        const nom = document.getElementById('name');
-        const nomErreur = document.getElementById('nomerreur');
-        
-        // objet validity, vérifie si l'input est valide, enlève la classe active (style.css)
-        if(nom.validity.valid){ 
-            nomErreur.classList.remove('active'); 
-            nomErreur.classList.add('tohide');
-            nom = ''; 
+        if (nameInput.current.validity.valid) {
+            setMessageErreurName('');
             return true;
         }
-        // si l'input n'est pas valide, ajoute la classe active (style.css)
-        else{  
-            nomErreur.classList.add('active'); 
-            // si le champ est vide
-            // valueMissing, tooShort, tooLong = propriété de validation
-            if(nom.validity.valueMissing){
-                nomErreur.innerText = 'Your name is missing, please enter your full name.';
-                nom = ''; 
+        else {
+            if (nameInput.current.validity.valueMissing) {
+                setMessageErreurName('Your name is missing.');
             }
-            else if(nom.validity.tooShort){
-                nomErreur.innerText = 'Your name is too short, please enter a name between 1 to 30 characters';
-                nom = ''; 
-            }
-            else if(nom.validity.tooLong){
-                nomErreur.innerText = 'Your name is too long, please enter a name between 1 to 30 characters.';
-                nom = ''; 
+            else if (nameInput.current.validity.typeMismatch) {
+                setMessageErreurName('Mismatch type.');
             }
         }
+    }   
+
+    // submit
+    const submitForm = (event) => {
+        // to disable automatic refresh on page on submit event
+        event.preventDefault(); 
+       
+        //
+        if(validateName()){
+            if (nameInput.current/* && 
+            event.currentTarget.checkValidity()*/) {
+            // print info
+            console.log("Name: " + nameInput.current.value);
+            }
+        }
+        
+
+        //
+
     }
+     
     // validate email
-    const validateEmail = () => {
+    /*const validateEmail = () => {
         const courriel = document.getElementById('email');
         const courrielErreur = document.getElementById('nomerreur');
 
@@ -72,9 +65,9 @@ export default function ContactComp() {
                 courrielErreur.innerText = 'Please enter a valid email format.';
             }
         }
-    }
+    }*/
     // verify subject
-    const validateSubject = () => {
+    /*const validateSubject = () => {
         const subject = document.getElementById('subject');
         const subjectErreur = document.getElementById('nomerreur');
 
@@ -96,9 +89,9 @@ export default function ContactComp() {
                 subjectErreur.innerText = 'The subject is too long, please enter a subject between 1 to 30 characters.';
             }
         }
-    } 
+    } */
     // validate description    
-    const validateDescription = () => {
+    /*const validateDescription = () => {
         const description = document.getElementById('description');
         const descriptionErreur = document.getElementById('nomerreur');
         // objet validity, vérifie si l'input est valide, enlève la classe active (style.css)
@@ -119,9 +112,9 @@ export default function ContactComp() {
                 descriptionErreur.innerText = 'The  description is too long.';
             }
         }
-    }      
+    }    */  
     // validate all inputs
-    const validateInputs = () => {
+    /*const validateInputs = () => {
         // if all inputs are valid, print info into the console
         if(validateName() && validateEmail() && validateSubject() && validateDescription()){
             printForm();
@@ -129,7 +122,7 @@ export default function ContactComp() {
         else{
             console.log("nope");
         }
-    }
+    }*/
 
     return <>
         <div className={styles.ContactComp}> 
@@ -138,23 +131,25 @@ export default function ContactComp() {
                     <a href="mailto:lamia_ouassaa@outlook.com">lamia_ouassaa@outlook.com</a>
             </p>           
             <div className={styles.contactcontainer}>  
-                <form className={styles.contactform} id="contactForm" >
+                <form className={styles.contactform} noValidate onSubmit={submitForm}>
                         <div className={styles.contactformheader}>
                             <label>
-                                <input type="text" id="name" className={styles.nom} required minLength="2" maxLength="30" placeholder="Name" /*onChange={validateName}*/ />
+                                <input type="text" className={styles.nom} required minLength="2" maxLength="30" placeholder="Name" ref={nameInput} onChange={validateName} onBlur={validateName} />
                             </label>
                             <label>
-                                <input type="email" id="email" className={styles.courriel} required placeholder="Email" /*onChange={validateEmail}*//>
+                                <input type="email" className={styles.courriel} required placeholder="Email" /*onChange={validateEmail}*//>
                             </label>
                         </div>
                         <label>
-                            <input type="text" id="subject" className={styles.sujet} required minLength="1" maxLength="30" placeholder="Subject" /*onChange={validateSubject}*/ />
+                            <input type="text" className={styles.sujet} required minLength="1" maxLength="30" placeholder="Subject" /*onChange={validateSubject}*/ />
                         </label>
                         <label>
-                            <textarea className={styles.message} id="description" placeholder="Message" required minLength="1" maxLength="500" /*onChange={validateDescription}*/ ></textarea>    
+                            <textarea className={styles.message} placeholder="Message" required minLength="1" maxLength="500" /*onChange={validateDescription}*/ ></textarea>    
                         </label>
-                        <input onClick={validateInputs} className={styles.contactsubmit} type="button" value="Send now"></input>
-                        <div id="nomerreur" class="erreur"> </div>    
+                        <input className={styles.contactsubmit} type="submit" value="Send now"></input>
+                        {messageErreurName !== '' &&
+                            <div className={styles.erreur}>{messageErreurName}</div>
+                        } 
                 </form>
             </div>               
         </div>  
