@@ -38,12 +38,12 @@
 .options h1{
     color:white;
 }
-.options h1:active{
+/*.options h1:active{
     color:white;
 }
 .options h1:visited{
     color:white;
-}
+}*/
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
