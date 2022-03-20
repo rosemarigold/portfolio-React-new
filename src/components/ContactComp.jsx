@@ -78,7 +78,8 @@ export default function ContactComp() {
         }
     }
 
-    // submit
+    // #5 submit
+    const [messageEmailSent, setMessageEmailSent] = useState('');
     const submitForm = (event) => {
         // to disable automatic refresh on page on submit event
         event.preventDefault(); 
@@ -98,6 +99,8 @@ export default function ContactComp() {
             emailInput.current.value = '';
             subjectInput.current.value = '';
             descriptionInput.current.value = '';
+            
+            setMessageEmailSent('Your email was sent!');
             }
         }
     }
@@ -137,6 +140,9 @@ export default function ContactComp() {
                         {messageErreurDescription !== '' &&
                             <div className={styles.erreur}>{messageErreurDescription}</div>
                         } 
+                        {messageEmailSent !== '' &&
+                            <div className={styles.emailSent}>{messageEmailSent}</div>
+                        }
                 </form>
             </div>               
         </div>  

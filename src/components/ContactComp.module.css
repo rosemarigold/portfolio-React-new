@@ -78,4 +78,9 @@ input[type=email] {
     color: red;
     border: solid 2px red;
 }
-
+.emailSent{
+    padding: 1rem;
+    text-align: center;
+    color: greenyellow;
+    border: solid 2px greenyellow;
+}
