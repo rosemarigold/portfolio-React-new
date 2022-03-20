@@ -73,10 +73,11 @@ input[type=email] {
 
 /*contact form*/
 .erreur {
+    margin: 0.3rem;
     padding: 1rem;
     text-align: center;
     color: red;
-    border: solid 2px red;
+    border: solid 1px red;
 }
 .emailSent{
     padding: 1rem;
