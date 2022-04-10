@@ -4,33 +4,27 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-between;
-    /*border: solid green 2px;*/
+    justify-content: space-between;
 }
 .options{
-    /*border: solid red 2px;*/
     min-width: 45%;
     display: flex;  
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;   
 }
-.options link{
-    text-decoration: underline;
-    color: white; 
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-.options a:visited{
-    text-decoration: underline;
+.notactive{
     color: white;
 }
 .options a:hover{
     text-decoration: underline;
     color: rgb(23, 93, 223);
 }
+.active{
+    text-decoration: underline;
+    color: rgb(23, 93, 223);
+}
 .name{
-    /*border: solid blue 2px;*/
     font-size: 2rem;
     padding-top: 0.1rem;
     padding-left: 0.5rem;

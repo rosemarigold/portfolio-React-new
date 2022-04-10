@@ -25,6 +25,19 @@ export default function Welcome(props) {
                     Skills
                 </div>
                 <div className={styles.skillsbody}>
+ 
+                    <div className={styles.skills}>
+                        <div className={styles.skillstitle}>HTML, CSS &#38; JS</div>
+                        <img src={require('../resources/skills/web.jpg')} alt="c#c++" className={styles.rectangle}/> 
+                        <div className={styles.skillsbody}>Developed websites using Node.js, Express and React.</div>
+                    </div>
+
+                    <div className={styles.skills}>
+                        <div className={styles.skillstitle}>.NET Framework</div>
+                        <img src={require('../resources/skills/dot_net_framework.png')} alt="dotnet" className={styles.square}/> 
+                        <div className={styles.skillsbody}>Developed desktop applications using WPF and WinForm.</div>
+                    </div>
+
                     <div className={styles.skills}>
                         <div className={styles.skillstitle}>C#/C++</div>
                         <img src={require('../resources/skills/csharp_cplusplus.jpg')} alt="c#c++" className={styles.rectangle}/> 
@@ -35,18 +48,6 @@ export default function Welcome(props) {
                         <div className={styles.skillstitle}>Java</div>
                         <img src={require('../resources/skills/java.png')} alt="java" className={styles.square}/> 
                         <div className={styles.skillsbody}>Built mobile applications using Android Studio.</div>
-                    </div>
-
-                    <div className={styles.skills}>
-                        <div className={styles.skillstitle}>.NET Framework</div>
-                        <img src={require('../resources/skills/dot_net_framework.png')} alt="dotnet" className={styles.square}/> 
-                        <div className={styles.skillsbody}>Developed desktop applications using WPF and WinForm.</div>
-                    </div>
-
-                    <div className={styles.skills}>
-                        <div className={styles.skillstitle}>HTML, CSS &#38; JS</div>
-                        <img src={require('../resources/skills/web.jpg')} alt="c#c++" className={styles.rectangle}/> 
-                        <div className={styles.skillsbody}>Developed websites using Node.js and React.</div>
                     </div>
 
                     <div className={styles.skills}>

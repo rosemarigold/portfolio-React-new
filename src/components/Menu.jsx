@@ -1,5 +1,5 @@
 import styles from './Menu.module.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Menu() {
     return <>
@@ -8,9 +8,9 @@ export default function Menu() {
                 Lamia Ouassaa
             </div>
             <div className={styles.options}>
-                <h1><Link to="/" /*className={ ({isActive}) => isActive ? styles.active : ''}*/>Home</Link></h1>
-                <h1><Link to="/ProjectsMainPage">Projects</Link></h1>
-                <h1><Link to="/Contact">Contact</Link></h1> 
+                <h1><NavLink to="/" className={ ({isActive}) => isActive ? styles.active : styles.notactive}>Home</NavLink></h1>
+                <h1><NavLink to="/ProjectsMainPage" className={ ({isActive}) => isActive ? styles.active : styles.notactive}>Projects</NavLink></h1>
+                <h1><NavLink to="/Contact" className={ ({isActive}) => isActive ? styles.active : styles.notactive}>Contact</NavLink></h1> 
             </div>             
         </div>  
     </>
