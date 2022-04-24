@@ -13,8 +13,7 @@ export default function ProjectsMenu() {
                             </p>
                         </div> 
                         <div className={styles.rightImage}>
-                            {/*<img src={require('../resources/project1/test2.png')} alt="project1-photo1"/> */}
-                            <img src={require('../resources/projectsmenu/image1.jpg')} alt="project1-photo1"/> 
+                            <img src={require('../resources/projectsmenu/project1.jpg')} alt="project1-cover"/> 
                         </div>                              
                 </div>
             </Link>  
@@ -26,16 +25,23 @@ export default function ProjectsMenu() {
                                User can add, modify, delete, and view programs and interns.</p>
                         </div> 
                         <div className={styles.rightImage}>
-                            {/*<img src={require('../resources/project2/interns.png')} alt="project2-photo2"/> */}
-                            <img src={require('../resources/projectsmenu/image2.jpg')} alt="project1-photo1"/> 
+                            <img src={require('../resources/projectsmenu/project2.jpg')} alt="project2-cover"/> 
                         </div>                                     
                     
                 </div>
             </Link>  
-            {/*<div className={styles.container}>
-                <h1><Link to="/Project3">Project3</Link></h1>             
-            </div>      
-            */}
+            <Link to="/Project3">
+                <div className={styles.container}>    
+                        <div className={styles.leftContent}>
+                            <h1>Food Delivery iOS Application</h1>
+                            <p> Application that can manage orders in a restaurant displaying the menu, the order summary, a map for delivery and the history of orders. </p>
+                        </div> 
+                        <div className={styles.rightImage}>
+                            <img src={require('../resources/projectsmenu/project3.png')} alt="project3-cover"/> 
+                        </div>                                     
+                    
+                </div>
+            </Link>  
         </div>
     </div>  
 }

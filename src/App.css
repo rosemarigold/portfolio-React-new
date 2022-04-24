@@ -12,6 +12,9 @@ body{
 .projet1photos p, .projet2photos p{
     color: white;
 }
+.projet3photos{
+    width: 50%;
+}
 .githubdiv{
     justify-content: center;
     text-align: center;

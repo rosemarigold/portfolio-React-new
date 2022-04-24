@@ -3,7 +3,6 @@
     justify-content: center;
 }
 .paragraph{
-    /*border: 2px solid blue;*/
     width: 45rem;
     justify-content: center;
     text-align: center;
@@ -22,11 +21,10 @@
     color: rgb(23, 93, 223);
 }
 .paragraph h1{
-    font-size: xx-large;
-    text-decoration: underline;
+    font-size: 2rem; 
 }
 .paragraph div{
-    border: 2px dotted white;
+    border: 1px solid white;
     padding: 1rem;
 }
 .body{ 
@@ -67,7 +65,7 @@
         padding-bottom: 1rem;       
     }
     .paragraph h1{
-        font-size: large;
+        font-size: 2rem;
         padding-top: 2rem;
     }
     .paragraph div{
