@@ -1,7 +1,10 @@
-import styles from './Welcome.module.css';
+import styles from './profile.module.css';
 
-export default function Welcome(props) {
+export default function Profile() {
     return <>
-    <p>hi</p>
+        <div className={styles.profilecontainer}>  
+            <img src={require('../../resources/totoro.gif')} alt="profile" className={styles.profilepicture} />    
+            <img src={require('../../resources/totoro.gif')} alt="profile" className={styles.profilepicture} />    
+        </div>
     </>
 }

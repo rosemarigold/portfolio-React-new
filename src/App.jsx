@@ -9,12 +9,15 @@ import { Suspense } from "react";
 import './App.css';
 
 const Home = lazy(() => import('./pages/Home'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
+const Contact = lazy(() => import('./pages/Contact'));
 
 export default function App() {
-  return  <Suspense fallback={<>...</>}> 
-      <Routes>
+  return  <Suspense fallback={<>...</>}><Routes>
         <Route path="/portfolio-React" element={<Layout />}/>
         <Route index element={<Home />}/>
+        <Route path="Portfolio" element={<Portfolio />}/>
+        <Route path="Contact" element={<Contact />}/>
       </Routes>
     </Suspense>
 }

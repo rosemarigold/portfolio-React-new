@@ -1,0 +1,11 @@
+.profilecontainer{
+    border: 2px solid purple;
+    width: 100%;
+    
+}
+/* profile image */
+.profilepicture{
+    height: 250px;
+    width: 250px;
+    border: 2px solid blue;
+}
