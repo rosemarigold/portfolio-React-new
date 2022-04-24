@@ -1,5 +1,4 @@
-import Welcome from '../components/Welcome.jsx';
-import Menu from '../components/Menu.jsx';
+import Menu from '../components/Menu/menu.jsx';
 import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
@@ -8,12 +7,7 @@ export default function Home() {
             <meta name="description" content="Home page of the portfolio" />
                 <title>Home - Portfolio</title>
         </Helmet>
-
-        <div className="menucontainer">
-            <Menu />
-        </div>   
-        <div className="welcome">
-            <Welcome />  
-        </div>      
+        
+        <Menu />
     </main>
 }
