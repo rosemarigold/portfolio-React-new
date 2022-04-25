@@ -9,13 +9,21 @@ export default function Home() {
                 <title>Lamia Ouassaa-Home</title>
         </Helmet>
 
-        <div className="maincontainer">
+        {/*<div className="maincontainer">
             <div className="leftpanel">
                 <Menu />
             </div>
             <div className="rightpanel">
                 <Profile />
             </div>     
-        </div>  
+        </div>  */}
+        <div className="container">  
+            <div className="menulayout">
+                1
+            </div>  
+            <div className="pageslayout">
+                2
+            </div> 
+        </div>
     </main>
 }

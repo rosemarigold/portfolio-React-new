@@ -1,34 +1,47 @@
+/* Source: https://www.freecodecamp.org/news/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431/ */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row*/
 @import-normalize;
 
 body{  
     font-family: "Roboto Mono", monospace;
-    /*** website view point container ***/
-    height: 99vh;
-    width: 100vh;
     margin:0; 
 }
-/* whole view pint (left + right panel) */
-.maincontainer{
-    display: flex;
-    flex-direction: row;
-    width: 203vh;
-    height: 100vh;
-    /*border: 2px solid blue;*/
+/* website container (left + right panel) */
+.container{
+    display: grid;  
+    grid-template-columns: 1fr 7fr;  
+    grid-template-rows: 100vh; 
 }
-/* left panel = menu task bar */
-.leftpanel{
-    /*border: 2px solid red;*/
-    height: 100%;
+/* menu task bar */
+.menulayout{
+    background-color: blue;
 }
-/* right panel = rest of the website section */
-.rightpanel{
-    /*border: 2px solid red;*/
-    width: 100%;
-    height: 100%;
+/* website pages */
+.pageslayout{
+    background-color: red;
 }
 
 
-/*mobile/responsive*/
+/*mobile*/
 @media only screen and (max-width: 820px) {
-    
+    /* website container (left + right panel) */
+    .container{
+        display: grid;
+        /*height: 200px;*/
+        height: 100vh;
+        /*grid-template-columns: 200px;*/
+        grid-template-rows: repeat(9, 1fr);
+    }
+    /* menu task bar */
+    .menulayout{
+        background-color: blue;
+        grid-column: 1/9;
+        min-height: 3rem;
+    }
+    /* website pages */
+    .pageslayout{
+        background-color: red;
+        grid-column: 1/7;
+        grid-row: span 1 / 7;
+    }
 }

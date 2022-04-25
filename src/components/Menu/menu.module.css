@@ -1,8 +1,9 @@
 /*** desktop ***/
 /* menu taskbar */
 .menucontainer{
-    width: 25vh;
-    height: 100vh;
+    /*width: 25vh;
+    height: 100vh;*/
+    height: 100%;
     background-color: rgb(97, 255, 97);
     margin:0;
     padding: 0;  
