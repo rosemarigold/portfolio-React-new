@@ -1,11 +1,19 @@
 .profilecontainer{
-    border: 2px solid purple;
-    width: 100%;
-    
+    border: 2px solid red;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 /* profile image */
 .profilepicture{
     height: 250px;
     width: 250px;
+    /*border: 2px solid blue;*/
+}
+
+.profileintro{
     border: 2px solid blue;
+
 }

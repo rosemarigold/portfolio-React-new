@@ -7,20 +7,24 @@ body{
     width: 100vh;
     margin:0; 
 }
+/* whole view pint (left + right panel) */
 .maincontainer{
     display: flex;
     flex-direction: row;
+    width: 203vh;
+    height: 100vh;
+    /*border: 2px solid blue;*/
 }
-/* menu section */
+/* left panel = menu task bar */
 .leftpanel{
     /*border: 2px solid red;*/
-    height: 100vh;
+    height: 100%;
 }
-/* rest of the website section */
+/* right panel = rest of the website section */
 .rightpanel{
-    border: 2px solid blue;
-   width: 100%;
-    height: 100vh;
+    /*border: 2px solid red;*/
+    width: 100%;
+    height: 100%;
 }
 
 

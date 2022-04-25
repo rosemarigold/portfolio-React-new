@@ -6,7 +6,7 @@ export default function Home() {
     return <main>
         <Helmet>
             <meta name="description" content="Home page" />
-                <title>Home</title>
+                <title>Lamia Ouassaa-Home</title>
         </Helmet>
 
         <div className="maincontainer">

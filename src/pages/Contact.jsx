@@ -5,7 +5,7 @@ export default function Contact() {
     return <main>
         <Helmet>
             <meta name="description" content="Contact page" />
-                <title>Contact</title>
+                <title>Lamia Ouassaa-Contact</title>
         </Helmet>
         
         <Menu />

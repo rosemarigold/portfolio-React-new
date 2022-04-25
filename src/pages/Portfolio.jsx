@@ -5,7 +5,7 @@ export default function Portfolio() {
     return <main>
         <Helmet>
             <meta name="description" content="Portfolio page" />
-                <title>Portfolio</title>
+                <title>Lamia Ouassaa-Portfolio</title>
         </Helmet>
         
         <Menu />
