@@ -26,6 +26,7 @@
     display: flex;
     flex-direction: row;
     white-space: nowrap;
+    padding-top: 1rem;
 }
 .menuoptions svg{
     fill: white;
@@ -53,7 +54,7 @@
         /*border: 2px solid red;*/
         display: flex;
         flex-direction: row;
-        padding-right: 0rem;
+        padding: 0rem;
     }
     .submenuoptions{
         /*border: 2px solid purple;*/
@@ -65,11 +66,10 @@
     }
     .optionscontainer{
         /*border: 2px solid purple;*/
-        /*min-width: 20%;
-        width: 80%;*/
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding: 0;
     }
     .menuoptions svg, .menuoptions h1{
         padding: 0;
