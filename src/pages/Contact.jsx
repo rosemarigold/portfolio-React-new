@@ -8,6 +8,13 @@ export default function Contact() {
                 <title>Lamia Ouassaa-Contact</title>
         </Helmet>
         
-        <Menu />
+        <div className="container">  
+            <div className="menulayout">
+                <Menu />
+            </div>  
+            <div className="pageslayout">
+                
+            </div> 
+        </div>
     </main>
 }

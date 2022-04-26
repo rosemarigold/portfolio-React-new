@@ -8,6 +8,13 @@ export default function Portfolio() {
                 <title>Lamia Ouassaa-Portfolio</title>
         </Helmet>
         
-        <Menu />
+        <div className="container">  
+            <div className="menulayout">
+                <Menu />
+            </div>  
+            <div className="pageslayout">
+                
+            </div> 
+        </div>
     </main>
 }
