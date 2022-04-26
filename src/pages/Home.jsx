@@ -19,10 +19,10 @@ export default function Home() {
         </div>  */}
         <div className="container">  
             <div className="menulayout">
-                1
+                <Menu />
             </div>  
             <div className="pageslayout">
-                2
+                <Profile />
             </div> 
         </div>
     </main>
