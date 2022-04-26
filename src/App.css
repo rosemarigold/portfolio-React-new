@@ -36,12 +36,13 @@ body{
     .menulayout{
         background-color: blue;
         grid-column: 1/9;
+        grid-row: 1/9;
         min-height: 3rem;
     }
     /* website pages */
     .pageslayout{
         background-color: red;
-        grid-column: 1/7;
-        grid-row: span 1 / 7;
+        grid-column: 1/9;
+        grid-row: 2/10;
     }
 }
