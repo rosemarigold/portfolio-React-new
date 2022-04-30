@@ -82,11 +82,10 @@
         transition: 1s;
     }
     .menuoptions svg:hover{
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(152, 253, 153);
         padding-top: 0.5rem;
         padding:1rem;
         border-radius: 15px;
-        fill: rgb(83, 255, 85);
         width: 40px;
         height: 40px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -95,8 +94,7 @@
         padding: 0;    
     }
     .menuoptions h1{
-        display: none;
-        
+        display: none;     
     }
 
 }
