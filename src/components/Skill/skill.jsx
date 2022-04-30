@@ -1,6 +1,6 @@
 import styles from './skill.module.css';
 
-export default function Skill() {
+export default function Skill(props) {
     return <>
         <div className={styles.skillcontainer}>  
             <div className={styles.title}>
