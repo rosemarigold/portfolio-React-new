@@ -2,6 +2,7 @@
 @media only screen and (min-width: 821px) {
 /* menu taskbar */
 .menucontainer{
+    /*border: 2px solid blue;*/
     height: 100%;
     background-color: rgb(97, 255, 97);
     margin:0;
@@ -9,31 +10,37 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*border: 2px solid blue;*/
 }
 /* menu options */
 .menuoptions{
     /*border: 2px solid red;*/
+    padding: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: fit-content;
 }
 .optionscontainer{
-    /*border: 2px solid purple;*/
+    /*border: 2px solid blue;*/
     min-width: fit-content;
     width: 100%;
     display: flex;
     flex-direction: row;
     white-space: nowrap;
-    padding-top: 1rem;
+    padding: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: 0.5s;
 }
 .menuoptions svg{
     fill: white;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     vertical-align: middle;
+    width: 35px;
+    height: 35px;
 }
 .menuoptions h1{
     vertical-align: middle;
@@ -43,6 +50,16 @@
     text-decoration: none;
     color: white;
     display: inline-block;
+
+    font-size: x-large;
+}
+.optionscontainer:hover{
+    background-color: rgb(152, 253, 153);
+    /*padding-top: 0.5rem;
+    padding:0.5rem;*/
+    border-radius: 15px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 }
 /*** mobile ***/
@@ -95,7 +112,7 @@
     .menuoptions svg{
         width: 40px;
         height: 40px;
-        transition: 1s;
+        transition: 0.5s;
     }
     .menuoptions svg:hover{
         background-color: rgb(152, 253, 153);
