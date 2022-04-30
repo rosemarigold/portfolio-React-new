@@ -1,4 +1,5 @@
 /*** desktop ***/
+@media only screen and (min-width: 821px) {
 /* menu taskbar */
 .menucontainer{
     height: 100%;
@@ -43,15 +44,28 @@
     color: white;
     display: inline-block;
 }
+}
 /*** mobile ***/
 @media only screen and (max-width: 820px) {
-    .menucontainer{   
+    .menucontainer{  
+        height: 100%;
+        background-color: rgb(97, 255, 97);
+        fill:white;
+        margin:0;
+        padding: 0;  
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         /*border: 2px solid blue;*/
     }
     .menuoptions{
         /*border: 2px solid red;*/
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
         display: flex;
         flex-direction: row;
         padding: 0rem;
@@ -62,19 +76,21 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        
+        align-items: center;      
     }
     .optionscontainer{
         /*border: 2px solid purple;*/
+        min-width: fit-content;
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 0;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-right: 0.5rem;     
     }
     .menuoptions svg{
         width: 40px;
