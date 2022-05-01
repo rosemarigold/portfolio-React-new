@@ -1,7 +1,7 @@
 .skillcontainer{
     margin: 1rem;
     padding: 1rem;
-    background-color: rgb(247, 148, 252);
+    /*background-color: rgb(247, 148, 252);*/
     border-radius: 30px;
     width: 12rem;
     height: 10rem;
@@ -9,7 +9,7 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 img{
-    border: red solid 2px;
+   width: 70%;
 }
 
 /*** desktop ***/

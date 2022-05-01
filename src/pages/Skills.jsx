@@ -2,6 +2,10 @@ import Menu from '../components/Menu/menu.jsx';
 import Skill from '../components/Skill/skill.jsx';
 import { Helmet } from 'react-helmet-async';
 
+import Image from '../components/Image/image';
+import image1 from '../resources/skills/web.jpg';
+import styles from '../components/Image/image.module.css';
+
 export default function Skills() {
     return <main>
         <Helmet>
@@ -10,16 +14,24 @@ export default function Skills() {
         </Helmet>
         
         <div className="container">  
+
             <div className="menulayout">
                 <Menu />
             </div>  
+
             <div className="pageslayout">
-                <Skill title="Hi"
-                        img={require('../resources/skills/web.jpg')}
-                        paragraph="smt smt"
-                >
-                </Skill>
+
+                <Skill title="Hi" paragraph="smt smt">
+                         
+                 </Skill>
+                 <div className={styles.imageContainer}>
+                        <Image source={image1}/>         
+                    </div>   
+                
+
             </div> 
+
         </div>
+
     </main>
 }
