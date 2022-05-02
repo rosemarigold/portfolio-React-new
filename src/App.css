@@ -18,17 +18,23 @@ body{
 }
 /* website pages */
 .pageslayout{
-   /* background-color: red;*/
+    /*border: solid 2px red;*/
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 /* skills container */
 .skillscontainer{
-    /*border: solid 2px red;*/
-    height: 100%;
+    /*border: solid 2px blue;*/
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+   
 }
 
 /*mobile*/

@@ -1,10 +1,15 @@
 .skillcontainer{
-    border: solid 2px red;
+    /*border: solid 2px red;*/
     margin: 1rem;
     padding: 1rem;
     border-radius: 30px;
-    width: 12rem;
-    /*height: 15rem;*/
+    width: 25%;
+    min-width: 10rem;
+    height: fit-content;
+    /*min-width: 12rem;*/
+    /*min-width: 10rem;*/
+    /*width: fit-content;*/
+    /*height: 14rem;*/
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -18,26 +23,29 @@
 }
 .paragraph{
     /*border: red 2px solid;*/
-    /*padding-top: 0.5rem;*/
+    padding-top: 1rem;
+  
     display: flex;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     height: fit-content;
+    height: 5rem;
     text-align: center;
     font-size: medium;
 }
 .image{
-    border: solid 2px red;
+    /*border: solid 2px red;*/
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
     /*height: 3rem;*/
-    
 }
 img{
-   width: 70%;
+   height: 80px;
+   /*border-radius: 20px;*/
 }
 
 /*** desktop ***/
