@@ -8,6 +8,23 @@
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+.title{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(165, 97, 255);
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px rgb(193, 193, 193);
+}
+.paragraph{
+    /*border: red 2px solid;*/
+    /*padding-top: 0.5rem;*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+}
 img{
    width: 70%;
 }

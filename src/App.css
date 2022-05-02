@@ -20,6 +20,12 @@ body{
 .pageslayout{
    /* background-color: red;*/
 }
+/* skills container */
+.skillscontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 
 /*mobile*/
