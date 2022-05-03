@@ -1,8 +1,8 @@
-import styles from './skill.module.css';
+import styles from './projectmenu.module.css';
 
-export default function Skill(props) {
+export default function  ProjectMenu(props) {
     return <>
-        <div className={styles.skillcontainer}>  
+        <div className={styles.projectmenucontainer}>  
             <div className={styles.title}>
                 {props.title}
             </div>

@@ -33,7 +33,7 @@ export default function Skills() {
                         <img src={require('../resources/skills/java.png')} alt="dotNetFramweork"/>   
                     </Skill>
                     <Skill title="Swift" paragraph="Built mobile applications for iOS using Xcode.">
-                        <img src={require('../resources/skills/swift.png')} alt="webimage"/>   
+                        <img src={require('../resources/skills/swift.png')} alt="swift"/>   
                     </Skill>
                     <Skill title="SQL" paragraph="Used to host websites and projects. Utilised MySQL, SQL Server, MongoDB &#38; Cassandra.">
                         <img src={require('../resources/skills/sql.png')} alt="sql"/>  

@@ -30,7 +30,14 @@
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-
+a{
+    color: greenyellow;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(165, 97, 255);
+    text-decoration: underline;
+}
 /*** mobile ***/
 @media only screen and (max-width: 820px) {
 

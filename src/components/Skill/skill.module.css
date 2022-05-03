@@ -6,10 +6,6 @@
     width: 25%;
     min-width: 10rem;
     height: fit-content;
-    /*min-width: 12rem;*/
-    /*min-width: 10rem;*/
-    /*width: fit-content;*/
-    /*height: 14rem;*/
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
