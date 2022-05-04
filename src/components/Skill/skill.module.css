@@ -20,7 +20,6 @@
 .paragraph{
     /*border: red 2px solid;*/
     padding-top: 1rem;
-  
     display: flex;
     align-items: center;
     width: fit-content;
@@ -40,7 +39,7 @@
     /*height: 3rem;*/
 }
 img{
-   height: 80px;
+   
    /*border-radius: 20px;*/
 }
 

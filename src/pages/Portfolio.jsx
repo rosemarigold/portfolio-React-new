@@ -14,15 +14,22 @@ export default function Portfolio() {
                 <Menu />
             </div>  
             <div className="pageslayout">
-                <ProjectMenu title="project1" paragraph="smt smt">
-                    <img src={require('../resources/projectsmenu/project1.jpg')} alt="webimage"/>   
-                </ProjectMenu>
-                <ProjectMenu title="project2" paragraph="smt smt">
-                    <img src={require('../resources/projectsmenu/project2.jpg')} alt="webimage"/>   
-                </ProjectMenu>
-                <ProjectMenu title="project3" paragraph="smt smt">
-                    <img src={require('../resources/projectsmenu/project3.jpg')} alt="webimage"/>   
-                </ProjectMenu>
+                <div className="portfoliocontainer">
+                    <div className="githubdiv">
+                        Check out my projects on <a target="_blank" href="https://github.com/rosemarigold">GitHub</a>!
+                    </div> 
+                    <div className="projectscontainer">
+                        <ProjectMenu title="Interns Management Application" paragraph="Desktop application developed in .NET WinForms Framework that can manage a small business inventory.">
+                            <img src={require('../resources/projectsmenu/project1.jpg')} alt="project1"/>   
+                        </ProjectMenu>
+                        <ProjectMenu title="Interns Management Application" paragraph="Desktop application developed in .NET WPF Framework that can manage interns and their respesctive programs.">
+                            <img src={require('../resources/projectsmenu/project2.jpg')} alt="project2"/>   
+                        </ProjectMenu>
+                        <ProjectMenu title="Food Delivery iOS Application" paragraph="Application that can manage orders in a restaurant displaying the menu, the order summary, a map for delivery and the history of orders.">
+                            <img src={require('../resources/projectsmenu/project3.jpg')} alt="project3"/>   
+                        </ProjectMenu>
+                    </div>
+                </div>
             </div> 
         </div>
     </main>

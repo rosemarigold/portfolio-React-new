@@ -34,7 +34,45 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-   
+}
+/* portfolio container */
+.portfoliocontainer{
+    /*border: solid 2px blue;*/
+    width: 100%;
+    height: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+.projectscontainer{
+    /*border: solid 2px red;*/
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.githubdiv{
+    /*border: solid 2px purple;*/
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: large;
+}
+.githubdiv a{
+    text-decoration: none;
+    color: greenyellow;
+    font-weight: bold;
+}
+.githubdiv a:hover{
+    text-decoration: underline;
+    color:rgb(165, 97, 255);
 }
 
 /*mobile*/
