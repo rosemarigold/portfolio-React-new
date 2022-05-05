@@ -22,11 +22,11 @@ export default function Portfolio() {
                         <ProjectMenu title="Interns Management Application" paragraph="Desktop application developed in .NET WinForms Framework that can manage a small business inventory.">
                             <img src={require('../resources/projectsmenu/project1.jpg')} alt="project1"/>   
                         </ProjectMenu>
-                        <ProjectMenu title="Interns Management Application" paragraph="Desktop application developed in .NET WPF Framework that can manage interns and their respesctive programs.">
+                        <ProjectMenu title="Inventory Management Application" paragraph="Desktop application developed in .NET WPF Framework that can manage interns and their respesctive programs.">
                             <img src={require('../resources/projectsmenu/project2.jpg')} alt="project2"/>   
                         </ProjectMenu>
-                        <ProjectMenu title="Food Delivery iOS Application" paragraph="Application that can manage orders in a restaurant displaying the menu, the order summary, a map for delivery and the history of orders.">
-                            <img src={require('../resources/projectsmenu/project3.jpg')} alt="project3"/>   
+                        <ProjectMenu title="Interns Food Delivery Application" paragraph="iOS Application that can manage orders in a restaurant displaying the menu, the order summary, a map for delivery and the history of orders.">
+                            <img src={require('../resources/projectsmenu/project3.jpg')} alt="project2"/>   
                         </ProjectMenu>
                     </div>
                 </div>
