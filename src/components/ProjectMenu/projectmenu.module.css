@@ -11,8 +11,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .title{
+    /*border: red 2px solid;*/
+    width: 100%;
     padding-top: 0.5rem;
     font-size: x-large;
     font-weight: bold;
@@ -43,26 +46,39 @@
 }
 svg{ 
     fill:black;
-    height: 150px;
+    fill:rgb(165, 97, 255);
+    fill:rgb(97, 255, 97);
+    height: 80px;
+    padding: 0.5rem;
 }
 /*mobile*/
 @media only screen and (max-width: 820px) {
     .projectmenucontainer{
         width: 80%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        
     }
     .projectinfo{
         /*border: red 2px solid;*/
-        width: 95%;
+        width: 95%;  
+    }
+    .title{
+        text-align: start;  
+        padding: 0;
     }
     .paragraph{
         /*border: red 2px solid;*/
         width: 100%;
-        height: fit-content;    
+        height: fit-content;  
+        text-align: start;  
     }
     .image{
-        width: 50%;
+        /*border: red 2px solid;*/
+        width: 30%;
     }
-    
+    .image svg{
+        width: 70px;
+    }
+
 }
