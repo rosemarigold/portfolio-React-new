@@ -10,7 +10,7 @@ export default function  ProjectMenu(props) {
                 <div className={styles.paragraph}>
                     {props.paragraph}
                 </div>
-                </div>
+            </div>
             <div className={styles.image}>
                 <div className={styles.imageContainer}>{props.children}</div>           
             </div>

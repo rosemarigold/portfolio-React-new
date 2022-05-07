@@ -1,5 +1,7 @@
 import Menu from '../../components/Menu/menu.jsx';
+import Project from '../../components/Project/project.jsx';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 
 export default function Project3() {
     return <main>
@@ -13,7 +15,12 @@ export default function Project3() {
                 <Menu />
             </div>  
             <div className="pageslayout">
-                
+            <div className="projectcontainer">
+                    <Project title="Food Delivery Application" description="iOS Application that can manage orders in a restaurant displaying the menu, the order summary, a map for delivery and the history of orders."/>
+                    <div className="backlink">
+                        <Link to="/Portfolio"> &#8592; Back</Link>
+                    </div> 
+                </div> 
             </div> 
         </div>
     </main>

@@ -66,6 +66,11 @@ body{
     
     /*border: solid 2px red;*/
     text-decoration: none;
+    color: black;
+}
+.projectscontainer a:hover{
+    background-color: rgb(205, 205, 205); 
+    opacity: 80%;
 }
 .githubdiv{
     /*border: solid 2px red;*/
@@ -85,7 +90,34 @@ body{
     text-decoration: underline;
     color:rgb(165, 97, 255);
 }
-
+/* project pages */
+.projectcontainer{
+    /*border: solid 2px red;*/
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 85%;
+    height: 85%;
+    margin: 1rem;
+    padding: 1rem;
+}
+.projectcontainer div{
+    /*border: solid 2px red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.backlink a{
+    padding: 1rem;
+    /*border: solid 2px red;*/
+    /*width: 95%;*/
+    color: greenyellow;
+    text-decoration: none;
+}
+.backlink a:hover{
+    color:rgb(165, 97, 255);
+    text-decoration: underline;
+}
 /*mobile*/
 @media only screen and (max-width: 820px) {
     /* website container (left + right panel) */
