@@ -82,6 +82,16 @@ svg{
     }
     .image svg{
         width: 70px;
+        width:70%
     }
+}
 
+/*mobile*/
+@media only screen and (max-width: 420px) {
+    .image{
+        width: 0%;
+    }
+    .image svg{
+        display: none;
+    }
 }
