@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: row;
 }
+.projectmenucontainer:hover{
+    color: white;
+}
 .title{
     /*border: red 2px solid;*/
     width: 100%;

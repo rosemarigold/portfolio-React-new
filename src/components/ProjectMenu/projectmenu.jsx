@@ -1,6 +1,6 @@
 import styles from './projectmenu.module.css'; 
 
-export default function  ProjectMenu(props) {
+export default function ProjectMenu(props) {
     return <>
         <div className={styles.projectmenucontainer}>  
             <div className={styles.projectinfo}>
