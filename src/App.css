@@ -71,9 +71,9 @@ body{
 .projectscontainer a:hover{
     text-decoration: none;
     background-color:rgb(165, 97, 255);
+    background-color: rgb(229, 229, 229);
     border-radius: 15px;
-    color: white;
-    
+    color: white;   
 }
 .subcontainer{
     /*border: solid 2px red;*/
@@ -129,6 +129,7 @@ body{
     color:rgb(165, 97, 255);
     text-decoration: underline;
 }
+
 /*mobile*/
 @media only screen and (max-width: 820px) {
     /* website container (left + right panel) */
