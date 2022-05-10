@@ -19,3 +19,5 @@ export const SliderData = [
         image: require('../../resources/project1/shopping_cart.png')
     }
 ]
+
+export default SliderData;

@@ -110,6 +110,8 @@ body{
     height: 85%;
     margin: 1rem;
     padding: 1rem;
+    /*to delete*/
+    width: 55rem;
 }
 .projectcontainer div{
     /*border: solid 2px red;*/
