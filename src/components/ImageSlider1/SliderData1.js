@@ -3,14 +3,13 @@
 
 export const SliderData1 = [
     {
-        image: require('../../resources/project2/program_management.png'),
-        description: "View the interns."
-    },
-    {
         image: require('../../resources/project2/interns.png')
     },
     {
         image: require('../../resources/project2/consult.png')
+    },
+    {
+        image: require('../../resources/project2/program_management.png')
     }
 ]
 

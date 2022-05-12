@@ -1,19 +1,18 @@
 // source: https://www.youtube.com/watch?v=l1MYfu5YWHc&ab_channel=BrianDesign
 // https://github.com/briancodex/react-image-slider-carousel/tree/main/src
 
-export const SliderData = [
+export const SliderData2 = [
     {
-        image: require('../../resources/project1/myinventory_view.png'),
-        description: "View the inventory."
+        image: require('../../resources/project1/myinventory_view.png')
     },
     {
-        image: require('../../resources/project1/myinventory_delete.png')
+        image: require('../../resources/project1/myinventory_add.png')
     },
     {
         image: require('../../resources/project1/myinventory_modify.png')
     },
     {
-        image: require('../../resources/project1/myinventory_add.png')
+        image: require('../../resources/project1/myinventory_delete.png')
     },
     {
         image: require('../../resources/project1/search.png')
@@ -23,4 +22,4 @@ export const SliderData = [
     }
 ]
 
-export default SliderData;
+export default SliderData2;
