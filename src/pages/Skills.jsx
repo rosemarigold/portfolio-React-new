@@ -19,7 +19,7 @@ export default function Skills() {
 
             <div className="pageslayout">
                 <div className="skillscontainer">
-                    <Skill title="HTML, CSS &#38; JS" paragraph="Developed websites using Node.js, Express.js and React.">
+                    <Skill title="HTML, CSS &#38; JS" paragraph="Developed websites using React and Express.js with Node.js.">
                         <img src={require('../resources/skills/web.png')} alt="webimage"/>   
                     </Skill>
 

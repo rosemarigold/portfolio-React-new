@@ -39,12 +39,25 @@
     /*height: 3rem;*/
 }
 
-/*** desktop ***/
-@media only screen and (min-width: 821px) {
-    
-}
+/*** mobile ***/
+@media only screen and (max-width: 985px) {
+    .skillcontainer{
+        max-width: 25rem;
+        width: fit-content;
 
+    }
+}
 /*** mobile ***/
 @media only screen and (max-width: 820px) {
+    .skillcontainer{
+        min-width: 10rem;
+        width: 30%;
 
+    }
+}
+/*** mobile ***/
+@media only screen and (max-width: 450px) {
+    .skillcontainer{
+        width: 75%;
+    }
 }
