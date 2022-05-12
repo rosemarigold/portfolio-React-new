@@ -1,4 +1,5 @@
 import Menu from '../components/Menu/menu.jsx';
+import ContactMe from '../components/ContactMe/contactMe.jsx';
 import { Helmet } from 'react-helmet-async';
 
 export default function Contact() {
@@ -13,7 +14,9 @@ export default function Contact() {
                 <Menu />
             </div>  
             <div className="pageslayout">
-                
+                <div className="contactContainer">
+                    <ContactMe />
+                </div> 
             </div> 
         </div>
     </main>
