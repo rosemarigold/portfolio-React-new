@@ -161,7 +161,6 @@ body{
     }
     /* menu task bar */
     .menulayout{
-        /*background-color: blue;*/
         grid-column: 1/9;
         grid-row: 1/2;
         min-height: 3rem;
@@ -173,6 +172,7 @@ body{
         grid-row: 2/10;
     }
     .skillscontainer{
+        border: red 2px solid;
         height: fit-content;
         height: 100%;
     }
