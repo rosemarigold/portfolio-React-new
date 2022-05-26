@@ -116,7 +116,7 @@
         padding: 0.1rem;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-        /*margin: 0.5rem;   */
+         
     }
     .menuoptions svg{
         fill:white;
@@ -138,12 +138,11 @@
     }
     .active{
         background-color: rgb(152, 253, 153);
-        width: 100%;
+        width: 85%;
         border-radius: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        width: 100%;
+        
     }
 }
