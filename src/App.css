@@ -52,7 +52,7 @@ body{
 }
 .projectscontainer{
     /*border: solid 2px blue;*/
-    height: fit-content;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -83,14 +83,13 @@ body{
     display: flex;
     width: 75%;
     padding: none;
-    margin: 0;
+    margin: 1rem;
 }
 .githubdiv{
     /*border: solid 2px red;*/
     width: 100%;
     height: fit-content;
-    padding: 1rem;
-    /*padding-top: 2rem;*/
+    padding-top: 1rem;
     text-align: center;
     font-size: large;
 }
