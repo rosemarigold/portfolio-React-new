@@ -60,6 +60,7 @@
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
+    transition: 0.5s;
 }
 .active{
     background-color: rgb(152, 253, 153);
@@ -116,33 +117,38 @@
         padding: 0.1rem;
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-         
     }
     .menuoptions svg{
         fill:white;
-        width: 2.5rem;
-        height: 2.5rem;
-        /*transition: 0.5s;*/
+        width: 40px;
+        height: 40px;
+        transition: 0.5s;
     }
-    /*.menuoptions svg:hover{*/
-    .optionscontainer:hover{
-        display: flex;
-        justify-content: center;
+    .menuoptions svg:hover{
+    /*.optionscontainer:hover{*/
         background-color: rgb(152, 253, 153);
+        padding-top: 0.5rem;
+        padding:1rem;
         border-radius: 15px;
+        width: 40px;
+        height: 40px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-    
+    .menuoptions svg, .menuoptions h1{
+        padding: 0;    
+    }
+    /* hide the options titles on the menu*/
     .menuoptions h1{
         display: none;     
     }
-    .active{
+    .active svg{
+        /*fill: rgb(165, 97, 255);*/
+
         background-color: rgb(152, 253, 153);
-        width: 85%;
+        padding-top: 0.5rem;
+        padding:1rem;
         border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+        width: 40px;
+        height: 40px;
     }
 }

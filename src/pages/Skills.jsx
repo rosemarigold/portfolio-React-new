@@ -40,7 +40,6 @@ export default function Skills() {
                     </Skill>
                 </div> 
             </div> 
-
         </div>
 
     </main>

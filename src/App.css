@@ -172,7 +172,7 @@ body{
         grid-row: 2/10;
     }
     .skillscontainer{
-        border: red 2px solid;
+        /*border: red 2px solid;*/
         height: fit-content;
         height: 100%;
     }
