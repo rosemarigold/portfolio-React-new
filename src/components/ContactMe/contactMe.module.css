@@ -6,8 +6,6 @@
 .contactparagraph{
     justify-content: center;
     text-align: center;
-    padding: 1rem;
-    padding-top: 2rem;
     font-size:medium;
     line-height: normal;
 }
@@ -74,14 +72,22 @@ input[type=email] {
     resize: vertical;
 }
 
+.ContactComp{
+    /*border: solid 2px red;*/
+    /*background-color: blue;*/
+    height: fit-content;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
 /*contact form*/
 .erreur {
-    font-size:small;
+    font-size: medium;
     margin: 0.3rem;
     padding: 1rem;
     text-align: center;
     color: red;
-    border: solid 1px red;
+    border: solid 2px red;
     border-radius: 15px;
 }
 .emailSent{
@@ -91,4 +97,30 @@ input[type=email] {
     color: greenyellow;
     border: solid 2px greenyellow;
     border-radius: 15px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 820px) {
+    .contactparagraph{
+        /*background-color: red;*/
+        font-size: small;
+    }
+    input[type=text] {
+        resize: vertical;
+        font-size: x-small;
+    }
+    input[type=email] {
+        resize: vertical;
+        font-size: x-small;
+    }
+    .message{
+        font-size: x-small;
+    }
+    .erreur, .emailSent{
+        font-size: x-small;
+        border-width: 1px;
+    }
+    .contactsubmit{
+        font-size: small;
+    }
 }

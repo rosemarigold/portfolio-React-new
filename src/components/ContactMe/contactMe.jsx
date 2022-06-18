@@ -140,12 +140,12 @@ export default function ContactComponent(props) {
 }
 
     return (
-        <div className={styles.ContactComp}> 
-        <p className={styles.contactparagraph}>Interested in hiring me for your project or just want to say hi?  <br /> 
+        <div className={styles.ContactComp}>
+            <p className={styles.contactparagraph}>Interested in hiring me for your project or just want to say hi?  <br /> 
                 You can fill in the contact form below <br /> or send me an email to&nbsp;
                 <a href="mailto:lamia.marigold@gmail.com">lamia.marigold@gmail.com</a>
-        </p>  
-        <div className={styles.contactcontainer}>  
+            </p>    
+            <div className={styles.contactcontainer}>  
                 <form  ref={form} onSubmit={submitForm} className={styles.contactform} noValidate>
                         <div className={styles.contactformheader}>
                             <label>
@@ -179,6 +179,6 @@ export default function ContactComponent(props) {
                         }
                 </form>
             </div>   
-        </div>   
+        </div> 
     );
 }
