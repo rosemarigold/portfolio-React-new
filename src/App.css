@@ -30,7 +30,7 @@ body{
 .skillscontainer{
     /*border: solid 2px blue;*/
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,8 +41,6 @@ body{
 }
 /* portfolio container */
 .portfoliocontainer{
-    /*border: solid 2px rgb(75, 0, 128);*/
-    padding-top: 2rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -78,8 +76,7 @@ body{
     color: white;   
 }
 .subcontainer{
-    /*border: solid 2px red;*/
-    padding: 1rem;
+    /*border: solid 2px blue;*/
     display: flex;
     width: 75%;
     padding: none;
@@ -164,7 +161,8 @@ body{
     /* menu task bar */
     .menulayout{
         grid-column: 1/9;
-        grid-row: 1/2;
+        /*grid-row: 1/2;*/
+        grid-row: 1/10;
         height: fit-content;
     }
     /* website pages */
@@ -174,8 +172,24 @@ body{
         grid-row: 2/10;
     }
     .skillscontainer{
-        /*border: red 2px solid;*/
-        height: fit-content;
+        /*border: blue 2px solid;*/
+        /*height: fit-content;*/
+       /*background-color: red;*/
         height: 100%;
+        margin: -15rem;
+    }
+    .githubdiv{
+        margin-top: 1rem;
+        font-size: medium;
+    }
+}
+
+/*mobile*/
+@media only screen and (max-width: 640px) {
+
+    .skillscontainer{
+        /*background-color: blue;*/
+        height: 100%;
+        margin: -35rem;
     }
 }
