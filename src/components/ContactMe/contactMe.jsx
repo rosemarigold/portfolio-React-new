@@ -122,9 +122,9 @@ export default function ContactComponent(props) {
             // function from EmailJs to send the email
             emailjs.sendForm('service_ncf2w2w', 'template_cdc9cfy', form.current, 'r42Y-azQa8YNJiP4T')
                 .then((result) => {
-                    console.log(result.text);
+                    //console.log(result.text);
                 }, (error) => {
-                    console.log(error.text);
+                    //console.log(error.text);
                 });
             
             // print a confirmation message that the email was sent
@@ -143,7 +143,7 @@ export default function ContactComponent(props) {
         <div className={styles.ContactComp}> 
         <p className={styles.contactparagraph}>Interested in hiring me for your project or just want to say hi?  <br /> 
                 You can fill in the contact form below <br /> or send me an email to&nbsp;
-                <a href="mailto:lamia_ouassaa@outlook.com">lamia_ouassaa@outlook.com</a>
+                <a href="mailto:lamia.marigold@gmail.com">lamia.marigold@gmail.com</a>
         </p>  
         <div className={styles.contactcontainer}>  
                 <form  ref={form} onSubmit={submitForm} className={styles.contactform} noValidate>
