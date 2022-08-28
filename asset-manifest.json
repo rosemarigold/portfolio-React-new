@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-React-new/static/css/main.55232d69.css",
-    "main.js": "/portfolio-React-new/static/js/main.d2c0f1d4.js",
-    "static/css/572.151321c8.chunk.css": "/portfolio-React-new/static/css/572.151321c8.chunk.css",
+    "main.js": "/portfolio-React-new/static/js/main.05a4dad0.js",
+    "static/css/572.5adec37f.chunk.css": "/portfolio-React-new/static/css/572.5adec37f.chunk.css",
     "static/js/572.3ef5fafd.chunk.js": "/portfolio-React-new/static/js/572.3ef5fafd.chunk.js",
     "static/css/868.03805107.chunk.css": "/portfolio-React-new/static/css/868.03805107.chunk.css",
     "static/js/868.1b87faf2.chunk.js": "/portfolio-React-new/static/js/868.1b87faf2.chunk.js",
@@ -37,8 +37,8 @@
     "static/media/totoro.gif": "/portfolio-React-new/static/media/totoro.fea0d1a6da5a6bae05ee.gif",
     "index.html": "/portfolio-React-new/index.html",
     "main.55232d69.css.map": "/portfolio-React-new/static/css/main.55232d69.css.map",
-    "main.d2c0f1d4.js.map": "/portfolio-React-new/static/js/main.d2c0f1d4.js.map",
-    "572.151321c8.chunk.css.map": "/portfolio-React-new/static/css/572.151321c8.chunk.css.map",
+    "main.05a4dad0.js.map": "/portfolio-React-new/static/js/main.05a4dad0.js.map",
+    "572.5adec37f.chunk.css.map": "/portfolio-React-new/static/css/572.5adec37f.chunk.css.map",
     "572.3ef5fafd.chunk.js.map": "/portfolio-React-new/static/js/572.3ef5fafd.chunk.js.map",
     "868.03805107.chunk.css.map": "/portfolio-React-new/static/css/868.03805107.chunk.css.map",
     "868.1b87faf2.chunk.js.map": "/portfolio-React-new/static/js/868.1b87faf2.chunk.js.map",
@@ -57,6 +57,6 @@
   },
   "entrypoints": [
     "static/css/main.55232d69.css",
-    "static/js/main.d2c0f1d4.js"
+    "static/js/main.05a4dad0.js"
   ]
 }
