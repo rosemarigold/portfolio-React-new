@@ -27,18 +27,31 @@ const ImageSlider1 = ({ slides }) => {
     }
 
     return <>
-    <section className={styles.slider}>
+    <section className={styles.sliderContainer}>
         
+    <section className={styles.slider}> 
+        <section className={styles.ArrowsDesktop}>
         <FaArrowAltCircleLeft className={styles.leftArrow} onClick={previousSlide} />
+        </section> 
+        
             {SliderData1.map((slide, index) => {
-                return(
-                    <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                        {index === current && (<img src={slide.image} alt="project-images" className={styles.image}/>)}
-                        {/* <div> {slide.description}</div>*/}
-                    </div>
-                ) 
+                    return(
+                        <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                            {index === current && (<img src={slide.image} alt="project-images" className={styles.image}/>)}
+                        </div>
+                    ) 
             })}
-        <FaArrowAltCircleRight className={styles.rightArrow} onClick={nextSlide}/>
+
+        <section className={styles.ArrowsDesktop}>
+            <FaArrowAltCircleRight className={styles.rightArrow} onClick={nextSlide}/>  
+        </section> 
+
+    </section>
+
+        <section className={styles.ArrowsMobile}>
+            <FaArrowAltCircleLeft className={styles.leftArrow} onClick={previousSlide}/>
+            <FaArrowAltCircleRight className={styles.rightArrow} onClick={nextSlide}/>  
+        </section>   
     </section>
     </>
 };

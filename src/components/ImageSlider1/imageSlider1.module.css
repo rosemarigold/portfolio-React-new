@@ -1,32 +1,36 @@
+.sliderContainer {
+  /*border: solid 2px red;*/
+}
 .slider {
-    /*border: solid 2px red;*/
+    /*border: solid 2px purple;*/
     height: fit-content;
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-content: space-between;
-  }
+    
+}
   
-  .image {
-    /*border: solid 2px red;*/
+.image {
     margin: 1rem;
     width: 45%;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  
-  .rightArrow, .leftArrow {
-    /*border: solid 2px red;*/
-    font-size: 3rem;
+}
+
+.rightArrow, .leftArrow {
+    font-size: 2rem;
     color: #000;
     color: greenyellow;
-    z-index: 10;
     cursor: pointer;
     user-select: none;
+    padding: 0.5rem;
+
   }
+
   .slide {
     opacity: 0;
     transition-duration: 1s ease;
@@ -38,10 +42,37 @@
     transform: scale(1.08);
   }
 
+  .ArrowsDesktop{
+    display: block;
+    font-size: 2rem;
+    /*border: solid 2px purple;*/
+  }
+
+  .ArrowsMobile{
+    display: none;
+  }
+    
+
   /*** mobile ***/
 @media only screen and (max-width: 820px) {
+
+  .sliderContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
   .image{
     width: 55%;
     min-width: 200px;
   }
+
+  .ArrowsDesktop{
+    display: none;
+  }
+
+  .ArrowsMobile{
+    display: flex;
+    justify-content: center;
+  }
+
 }
