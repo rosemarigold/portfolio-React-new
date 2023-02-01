@@ -6,7 +6,7 @@
 .contactparagraph{
     justify-content: center;
     text-align: center;
-    font-size:medium;
+    font-size: medium;
     line-height: normal;
 }
 .contactparagraph a:link{
@@ -41,19 +41,27 @@
     cursor: auto;
 }
 .contactsubmit {
-    width: 100%;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    margin: 0.6rem 0rem;
-    border-style: none;
+
+    margin-top: 1.5rem;
+    padding: 0.8rem;
     border-radius: 15px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    cursor: pointer;
-    background-color: greenyellow
+    border: none;
+    height: fit-content;
+    width: 100%;
+    box-shadow: rgba(54, 54, 54, 0.15) 0px 5px 5px 1px;
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
 }
 .contactsubmit:hover {
-    background-color: rgb(165, 97, 255);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
 }
 .contactformheader{
     display: flex;

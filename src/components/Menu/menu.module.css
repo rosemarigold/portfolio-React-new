@@ -2,20 +2,29 @@
 @media only screen and (min-width: 821px) {
 /* menu taskbar */
 .menucontainer{
-    /*border: 2px solid blue;*/
     height: 100%;
-    background-color: rgb(97, 255, 97);
     margin:0;
     padding: 0;  
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    border: none;
+    width: 100%;
+    width: 31vh;
+    box-shadow: rgba(54, 54, 54, 0.15) 0px 5px 5px 1px;
+    background-color: black;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
 }
 /* menu options */
 .menuoptions{
-    /*border: 2px solid red;*/
+    border: 2px solid black;
     padding: 1rem;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,16 +32,14 @@
     width: fit-content;
 }
 .optionscontainer{
-    /*border: 2px solid blue;*/
+    border: 2px solid black;
     min-width: fit-content;
-    width: 100%;
     display: flex;
     flex-direction: row;
     white-space: nowrap;
     padding: 0.1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    /*transition: 0.5s;*/
 }
 .menuoptions svg{
     fill: white;
@@ -50,24 +57,19 @@
     text-decoration: none;
     color: white;
     display: inline-block;
-
+    text-align: center;
     font-size: x-large;
 }
 .optionscontainer:hover{
-    background-color: rgb(152, 253, 153);
-    /*padding-top: 0.5rem;
-    padding:0.5rem;*/
-    border-radius: 15px;
+    border: solid white 2px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
-    transition: 0.5s;
 }
 .active{
-    background-color: rgb(152, 253, 153);
+    background-color: #9f00de;
+    text-align: left;
     width: 100%;
-    border-radius: 15px;
 }
-
 
 }
 /*** mobile ***/
@@ -86,6 +88,7 @@
     }
     .menuoptions{
         /*border: 2px solid red;*/
+        background-color: black;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -122,17 +125,11 @@
         fill:white;
         width: 40px;
         height: 40px;
-        transition: 0.5s;
     }
     .menuoptions svg:hover{
-    /*.optionscontainer:hover{*/
-        background-color: rgb(152, 253, 153);
-        padding-top: 0.5rem;
-        padding:1rem;
-        border-radius: 15px;
         width: 40px;
         height: 40px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        width: 100%;
     }
     .menuoptions svg, .menuoptions h1{
         padding: 0;    
@@ -141,14 +138,14 @@
     .menuoptions h1{
         display: none;     
     }
+    .menuoptions .active{
+        
+        width: 100%;
+    }
     .active svg{
-        /*fill: rgb(165, 97, 255);*/
-
-        background-color: rgb(152, 253, 153);
-        padding-top: 0.5rem;
-        padding:1rem;
-        border-radius: 15px;
+        fill: #9f00de;
         width: 40px;
         height: 40px;
+        width: 100%;
     }
 }
