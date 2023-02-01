@@ -31,11 +31,11 @@
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 a{
-    color: greenyellow;
+    color: #9f00de;
     text-decoration: none;
 }
 a:hover{
-    color:rgb(165, 97, 255);
+    color:rgb(97, 215, 255);
     text-decoration: underline;
 }
 /*** mobile ***/

@@ -37,9 +37,7 @@
     width: fit-content
 }
 svg{ 
-    fill:black;
-    fill:rgb(165, 97, 255);
-    fill:rgb(97, 255, 97);
+    fill: rgb(97, 215, 255);
     height: 80px;
     padding: 0.5rem;
 }
@@ -57,14 +55,14 @@ svg{
     .title{
         text-align: start;  
         padding: 0;
-        font-size: large;
+        font-size: x-large;
     }
     .paragraph{
         /*border: red 2px solid;*/
         width: 100%;
         height: fit-content;  
         text-align: start;  
-        font-size: small;
+        font-size: large;
     }
     .image{
         /*border: red 2px solid;*/

@@ -162,21 +162,25 @@ export default function ContactComponent(props) {
                             <textarea className={styles.message} placeholder="Message" required minLength="1" maxLength="500" ref={descriptionInput} onChange={validateDescription} onBlur={validateDescription} name="message"></textarea>    
                         </label>
                         <input className={styles.contactsubmit} type="submit" value="Send now"></input>
-                        {messageErreurName !== '' &&
-                            <div className={styles.erreur}>{messageErreurName}</div>
-                        } 
-                        {messageErreurEmail !== '' &&
-                            <div className={styles.erreur}>{messageErreurEmail}</div>
-                        } 
-                        {messageErreurSubject !== '' &&
-                            <div className={styles.erreur}>{messageErreurSubject}</div>
-                        } 
-                        {messageErreurDescription !== '' &&
-                            <div className={styles.erreur}>{messageErreurDescription}</div>
-                        } 
-                        {messageEmailSent !== '' &&
-                            <div className={styles.emailSent}>{messageEmailSent}</div>
-                        }
+                        <div className={styles.errorMessage}>
+                            
+                            {messageErreurName !== '' &&
+                                <div className={styles.erreur}>{messageErreurName}</div>
+                            } 
+                            {messageErreurEmail !== '' &&
+                                <div className={styles.erreur}>{messageErreurEmail}</div>
+                            } 
+                            {messageErreurSubject !== '' &&
+                                <div className={styles.erreur}>{messageErreurSubject}</div>
+                            } 
+                            {messageErreurDescription !== '' &&
+                                <div className={styles.erreur}>{messageErreurDescription}</div>
+                            } 
+                            {messageEmailSent !== '' &&
+                                <div className={styles.emailSent}>{messageEmailSent}</div>
+                            }
+                        </div>
+                        
                 </form>
             </div>   
         </div> 
